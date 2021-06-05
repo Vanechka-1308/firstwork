@@ -1,0 +1,81 @@
+/* колір основного тексту #757575*/
+/* другорядний текст(номер телефону)#212121 */
+/* колір веба при наведенні  #2196f3*/
+/* заказать услугу 000015*/
+/*адреса в кінці сторінки rgba(255,255,255,0,6)*/
+/*основний фон #FFFFFF */
+/* другорядний фон(сірий) #F5F4FA*/
+/* футер #2F303A */
+/* фон "ефекттивное..." rgba(47, 48, 58, 0.8); */
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--akcent-color: #2196f3;
+	--primari-bg-color: #ffffff;
+	--futer-color: #2f303a;
+	--fon-color: rgba(47, 48, 58, 0.8);
+	--text-color-futer: rgba(255, 255, 255, 0, 6);
+}
+
+body {
+	background-color: var(--primari-bg-color);
+	color: var(--primary-text-color);
+}
+ul {
+	list-style: none;
+}
+/* Назва сайту */
+.site-name {
+	color: var(--akcent-color);
+}
+/* site-nav */
+.site-nav .link {
+	color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--akcent-color);
+}
+.site-nav .link.current {
+	color: var(--akcent-color);
+}
+/* aut-nav */
+.auth-nav .link {
+	color: var(--title-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+	color: var(--akcent-color);
+}
+
+/* Герой */
+.hero-title {
+	background-color: rgba(47, 48, 58, 0.8);
+	color: #ffffff;
+}
+.section-title {
+	color: var(--title-text-color);
+}
+/* button */
+.button {
+	color: var(--title-text-color);
+	background-color: var(--primari-bg-color);
+}
+.button.primary {
+	color: var(--primari-bg-color);
+	background-color: var(--akcent-color);
+}
+.pictures {
+	color: var(--primari-bg-color);
+	background-color: rgba(47, 48, 58, 0.8);
+}
+/* Футер */
+.end-page {
+	background-color: var(--futer-color);
+}
+.title-page {
+	color: var(--primari-bg-color);
+}
+.adress {
+	color: var(--text-color-futer);
+}
