@@ -15,6 +15,8 @@
 	--futer-color: #2f303a;
 	--fon-color: rgba(47, 48, 58, 0.8);
 	--text-color-futer: rgba(255, 255, 255, 0, 6);
+	--button-color-portfolio: #f5f4fa;
+	--fon-color-text: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -56,15 +58,7 @@ ul {
 .section-title {
 	color: var(--title-text-color);
 }
-/* button */
-.button {
-	color: var(--title-text-color);
-	background-color: var(--primari-bg-color);
-}
-.button.primary {
-	color: var(--primari-bg-color);
-	background-color: var(--akcent-color);
-}
+
 .pictures {
 	color: var(--primari-bg-color);
 	background-color: rgba(47, 48, 58, 0.8);
@@ -78,4 +72,36 @@ ul {
 }
 .adress {
 	color: var(--text-color-futer);
+}
+/* button */
+.button {
+	color: var(--title-text-color);
+	background-color: var(--primari-bg-color);
+}
+.button.primary {
+	color: var(--primari-bg-color);
+	background-color: var(--akcent-color);
+}
+
+/* portfolio */
+
+/* кнопки */
+.content {
+	color: var(--primari-bg-color);
+}
+.tits {
+	color: var(--primari-bg-color);
+	background-color: var(--akcent-color);
+}
+.tits :hover .tits :focus 
+/* секція з контентом */
+.content-list .content {
+	color: var(--title-text-color);
+}
+.part-of-content {
+	color: var(--title-text-color);
+}
+.part-of {
+	color: var(--primari-bg-color);
+	background-color: var(--fon-color-text);
 }
