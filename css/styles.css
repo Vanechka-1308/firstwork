@@ -33,6 +33,7 @@ ul {
 /* Назва сайту */
 .site-name {
 	color: var(--akcent-color);
+	text-decoration: none;
 
 	font-family: Raleway;
 	font-weight: 700;
@@ -42,6 +43,7 @@ ul {
 /* site-nav */
 .site-nav .link {
 	color: var(--title-text-color);
+	text-decoration: none;
 
 	font-weight: 500;
 	font-size: 14px;
@@ -58,6 +60,7 @@ ul {
 /* aut-nav */
 .auth-nav .link {
 	color: var(--title-text-color);
+	text-decoration: none;
 
 	font-weight: 500;
 	font-size: 14px;
@@ -129,7 +132,7 @@ ul {
 .title-page-two {
 	color: var(--primari-bg-color);
 
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
@@ -145,8 +148,8 @@ ul {
 .button {
 	background-color: var(--akcent-color);
 	color: var(--primari-bg-color);
+	text-decoration: none;
 
-	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.87;
@@ -163,27 +166,51 @@ ul {
 /* PORTFOLIO */
 
 /* кнопки */
-.content {
-	color: var(--primari-bg-color);
-}
+
 .tits {
 	color: var(--primari-bg-color);
 	background-color: var(--akcent-color);
+	text-decoration: none;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
 }
 
-.tits :hover .tits :focus 
+.tits :hover 
+.tits :focus 
+
 
 
 /* секція з контентом */
-
+.content {
+	color: var(--primari-bg-color);
+}
 
 .content-list .content {
 	color: var(--title-text-color);
 }
 .part-of-content {
 	color: var(--title-text-color);
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
 }
 .part-of {
 	color: var(--primari-bg-color);
 	background-color: var(--fon-color-text);
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
+.paragraph {
+	color: var(--primary-text-color);
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.87;
 }
