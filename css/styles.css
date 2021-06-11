@@ -34,7 +34,10 @@ ul {
 .site-name {
 	color: var(--akcent-color);
 	text-decoration: none;
-
+	}
+	.accent {
+		color: var(--title-text-color)
+	}
 	font-family: Raleway;
 	font-weight: 700;
 	font-size: 26px;
@@ -184,12 +187,10 @@ ul {
 
 
 /* секція з контентом */
-.content {
-	color: var(--primari-bg-color);
-}
 
-.content-list .content {
+.content-list {
 	color: var(--title-text-color);
+	text-decoration: none;
 }
 .part-of-content {
 	color: var(--title-text-color);
@@ -198,6 +199,7 @@ ul {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	text-decoration: none;
 }
 .part-of {
 	color: var(--primari-bg-color);
@@ -213,4 +215,5 @@ ul {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.87;
+	text-decoration: none;
 }
