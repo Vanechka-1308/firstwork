@@ -26,6 +26,11 @@ body {
 	letter-spacing: 0.03em;
 	font-style: normal;
 }
+.container {
+	width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 ul {
 	list-style: none;
@@ -34,14 +39,14 @@ ul {
 .site-name {
 	color: var(--akcent-color);
 	text-decoration: none;
-	}
-	.accent {
-		color: var(--title-text-color)
-	}
+
 	font-family: Raleway;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
+}
+.accent {
+	color: var(--title-text-color);
 }
 /* site-nav */
 .site-nav .link {
@@ -149,6 +154,8 @@ ul {
 
 /* button */
 .button {
+	radius: 4px;
+	padding: 10px 32px
 	background-color: var(--akcent-color);
 	color: var(--primari-bg-color);
 	text-decoration: none;
@@ -164,56 +171,4 @@ ul {
 .button.primary {
 	color: var(--primari-bg-color);
 	background-color: var(--akcent-color);
-}
-
-/* PORTFOLIO */
-
-/* кнопки */
-
-.tits {
-	color: var(--primari-bg-color);
-	background-color: var(--akcent-color);
-	text-decoration: none;
-
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.62;
-	text-align: center;
-}
-
-.tits :hover 
-.tits :focus 
-
-
-
-/* секція з контентом */
-
-.content-list {
-	color: var(--title-text-color);
-	text-decoration: none;
-}
-.part-of-content {
-	color: var(--title-text-color);
-
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
-	text-decoration: none;
-}
-.part-of {
-	color: var(--primari-bg-color);
-	background-color: var(--fon-color-text);
-
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 28px;
-}
-.paragraph {
-	color: var(--primary-text-color);
-
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.87;
-	text-decoration: none;
 }

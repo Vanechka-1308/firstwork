@@ -1,0 +1,52 @@
+/* Портфолио */
+
+/* кнопки */
+.tits {
+	color: var(--primari-bg-color);
+	background-color: var(--akcent-color);
+	text-decoration: none;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+}
+
+.tits :hover 
+.tits :focus 
+
+
+
+/* секція з контентом */
+
+.content-list {
+	color: var(--title-text-color);
+	text-decoration: none;
+}
+.content-list {
+	text-decoration: none;
+}
+.part-content {
+	color: var(--title-text-color);
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.part {
+	color: var(--primari-bg-color);
+	background-color: var(--fon-color-text);
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.55;
+}
+.paragraph {
+	color: var(--primary-text-color);
+
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.87;
+}
