@@ -154,9 +154,7 @@ ul {
 
 /* button */
 .button {
-	radius: 4px;
-	padding: 10px 32px
-	background-color: var(--akcent-color);
+	padding: 10px 32px;
 	color: var(--primari-bg-color);
 	text-decoration: none;
 
