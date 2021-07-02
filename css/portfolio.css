@@ -9,6 +9,14 @@
 	--button-color-portfolio: #f5f4fa;
 	--fon-color-text: rgba(33, 150, 243, 0.9);
 }
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 
 body {
 	background-color: var(--primari-bg-color);
@@ -21,9 +29,16 @@ body {
 
 /* кнопки */
 .tits {
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 6px 22px;
+	min-width: 130px;
+
 	background-color: var(--akcent-color);
 	text-decoration: none;
 	color: var(--primari-bg-color);
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
