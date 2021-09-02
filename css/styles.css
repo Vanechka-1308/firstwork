@@ -17,6 +17,7 @@
 	--text-color-futer: rgba(255, 255, 255, 0, 6);
 	--button-color-portfolio: #f5f4fa;
 	--fon-color-text: rgba(33, 150, 243, 0.9);
+	--fon-color-team: #f5f4fa;
 }
 
 html {
@@ -35,35 +36,64 @@ body {
 	letter-spacing: 0.03em;
 	font-style: normal;
 }
+.img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 .container {
-	width: 1170px;
+	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 3px solid red;
-	background-color: aqua;
+
+	/*outline: 3px solid red;
+	background-color: aqua;*/
 }
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
+/* main-nav*/
+.main-nav {
+	display: flex;
+	align-items: center;
+}
 /* Назва сайту */
 .site-name {
 	color: var(--akcent-color);
 	text-decoration: none;
+
 	font-family: Raleway;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 	text-align: center;
+
+	margin-right: 85px;
 }
 .accent {
 	color: var(--title-text-color);
 }
 /* site-nav */
+.site-nav {
+	display: flex;
+}
+/*.site-nav .item {
+	outline: 1px solid;
+}*/
+/* .site-nav.item :(last-child) {
+margin-right: 0;*/
+.site-nav .item:not(:last-child) {
+	margin-right: 50px;
+}
 .site-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	color: var(--title-text-color);
 	text-decoration: none;
 
@@ -72,14 +102,24 @@ ul {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
 	color: var(--akcent-color);
 }
+
 .site-nav .link.current {
 	color: var(--akcent-color);
 }
-/* aut-nav */
+
+/* auth-nav */
+.auth-nav {
+	display: flex;
+	margin-left: auto;
+}
+.auth-nav .item + .item {
+	margin-left: 30px;
+}
 .auth-nav .link {
 	color: var(--title-text-color);
 	text-decoration: none;
@@ -121,48 +161,89 @@ ul {
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
+
 	margin-top: 0;
 	margin-bottom: 50px;
 }
-
-.section {
+/*container-benefits*/
+.benefits {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
 
-.list {
-	margin-top: 30px;
-	margin-bottom: 10px;
+.feature-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	font-size: 14px;
+	line-height: 1.71;
 }
 
-.section-two {
+.feature-list .item {
+	width: 270px;
+	align-items: center;
+	padding-right: 30px;
+}
+
+/*container-occupation*/
+.occupation {
 	padding-top: 0;
 	padding-bottom: 94px;
 }
+.feature-list .item-img {
+	width: 370px;
+	align-items: center;
+	margin-right: 30px;
+}
+.feature-list .item-img:last-child {
+	margin-right: 0;
+}
 
-.section-three {
+/*container-team*/
+.team {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	background-color: var(--fon-color-team);
+}
+
+.item-team {
+	width: 270px;
+	align-items: center;
+	margin-right: 30px;
+}
+.item-team:last-child {
+	margin-right: 0;
+}
+.network {
+	padding-bottom: 24px;
+	display: flex;
+}
+.customers {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.section-four {
-	padding-top: 94px;
-	padding-bottom: 94px;
+
+.customers-list {
+	display: flex;
+	/*justify-content: space-between;*/
+}
+
+.customers-item {
+	width: 170px;
+	margin-right: 30px;
+}
+.customers-item:last-child {
+	margin-right: 0;
 }
 .section-title-name {
 	color: var(--title-text-color);
+	text-align: center;
 
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
 	margin-top: 30px;
 	margin-bottom: 10px;
-}
-
-.future-list {
-	font-size: 14px;
-	line-height: 1.71;
-	padding-top: 110px;
-	padding-bottom: 80px;
 }
 
 .pictures {
@@ -173,6 +254,7 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	text-align: center;
+
 	padding-top: 27px;
 	padding-bottom: 27px;
 	margin-top: 0;
@@ -190,10 +272,34 @@ ul {
 }
 
 /* Футер */
+.coordinates {
+	width: 230px;
+}
+.social-network {
+	display: flex;
+}
+.site-name-two {
+	color: var(--akcent-color);
+	text-decoration: none;
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.another {
+	color: var(--primari-bg-color);
+}
 .end-page {
 	background-color: var(--futer-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	display: flex;
+	justify-content: space-between;
 }
 
 .title-page {
@@ -206,10 +312,12 @@ ul {
 .title-page-two {
 	color: var(--primari-bg-color);
 
+	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+	width: 206px;
 }
 
 .adress {
